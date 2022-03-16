@@ -52,7 +52,8 @@ body {
 }
 .special-font {
 	font-family: 'Bebas Neue', cursive;
-	color: white
+	color: white;
+	font-size: 70px 
 }
 .another-one {
 	font-family: 'Fredoka', sans-serif;   
