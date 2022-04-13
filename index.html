@@ -1,12 +1,18 @@
 <!doctype html>
 <html class="h-100" lang="en">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script> 
-    <title>Bootstrap Base Template</title>
+  
   <!-- An HTML document always starts with a "head", i.e. information about the page that isn't directly visible -->
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+	  <script>
+// When the user clicks on <div>, open the popup
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+</script>
     <!-- Links to the CSS styles from Bootstrap. -->
     <!-- -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
@@ -263,16 +269,9 @@
       <p class="container text-end">
         Created as part of the <a href="https://www.buas.nl/en/programmes/creative-business" target="_blank">Bachelor of Creative Business at Breda University of Applied Sciences.</a>
       </p>
-		<div class="popup" id="popup-1">
-			<div class="overlay"></div>
-			<div class="content">
-				<div class="close-btn" onclick="togglePopup()">&times;</div>
-				<h1>Title</h1>
-				<p>lorem ipsum dolor sit amet bla bla bla la luz is love</p>
-			</div>
-		</div>
-		
-		<button onclick="togglePopup()">Show Popup</button>
+		<div class="popup" onclick="myFunction()">Click me!
+  <span class="popuptext" id="myPopup">Popup text...</span>
+</div>
     </footer>
 
   </body>
